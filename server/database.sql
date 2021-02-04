@@ -1,4 +1,5 @@
-CREATE DATABASE authtodolist;
+CREATE DATABASE openvesselPERN;
+CREATE EXTENSION "uuid-ossp";
 
 CREATE TABLE users(
   user_id UUID DEFAULT uuid_generate_v4(),
@@ -8,11 +9,11 @@ CREATE TABLE users(
   PRIMARY KEY (user_id)
 );
 
-CREATE TABLE todos(
-  todo_id SERIAL,
+CREATE TABLE dicoms(
+  dicom_id SERIAL PRIMARY KEY,
   user_id UUID,
-  description VARCHAR(255) NOT NULL,
-  PRIMARY KEY (todo_id),
+  study_name VARCHAR(255) NOT NULL,
+  description VARCHAR(255),
   FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
