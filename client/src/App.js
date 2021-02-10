@@ -56,7 +56,7 @@ function App() {
               path="/"
               render={props =>
                 !isAuthenticated ? (
-                  <Home {...props} />
+                  <Landing {...props} />
                 ) : (
                   <Redirect to="/account" />
                 )

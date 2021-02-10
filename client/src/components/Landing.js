@@ -1,18 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Container, Button, Row, Col } from 'react-bootstrap';
 
 const Landing = () => {
   return (
-    <div className="jumbotron mt-5">
-      <h1>Welcome to the Todo List App</h1>
-      <p>Sign In and start building your todo list</p>
-      <Link to="/login" className="btn btn-primary">
-        Login
-      </Link>
-      <Link to="/register" className="btn btn-primary ml-3">
-        Register
-      </Link>
-    </div>
+    <Container className="text-center">
+            <div id="logo-container">
+                <div id="openVessel-logo">
+                    <img alt="OpenVessel Logo" src={process.env.PUBLIC_URL + '/img/OpenVessel Logo.png'} style={{width: '50%', height: '30%'}}></img>
+                </div>
+            </div>
+            <div>
+              <Container>
+                <Row>
+                  <Col>
+                  <Link to="/login"><Button>Login</Button></Link>
+                  </Col>
+                  <Col>
+                    <Link to="/register"><Button>Register</Button></Link>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+    </Container>
   );
 };
 
