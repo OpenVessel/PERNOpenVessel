@@ -1,3 +1,6 @@
+// util for email validation
+
+
 module.exports = function (req, res, next) {
   const { email, name, password } = req.body;
 

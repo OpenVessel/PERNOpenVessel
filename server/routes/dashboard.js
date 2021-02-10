@@ -1,3 +1,5 @@
+// defines endpoints related to getting todo items (will be replaced with Orthanc REST API)
+
 const router = require("express").Router();
 const authorize = require("../middleware/authorize");
 const pool = require("../db");

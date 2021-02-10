@@ -1,3 +1,5 @@
+// defines how post requests to auth endpoints work
+
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
