@@ -5,8 +5,9 @@ const axios = require("axios");
 router.get('/:apiEndpoint', async (req, res) => {
     try {
         const { apiEndpoint } = req.params;
-        // get todo name and description for a specified user id
-        const orthancRes = await axios.get(`http://localhost:8042/${apiEndpoint}`)
+
+        const orthancPort = 8042
+        const orthancRes = await axios.get(`http://localhost:${orthancPort}/${apiEndpoint}`)
         .then(res => {
             return res.data;
         })
