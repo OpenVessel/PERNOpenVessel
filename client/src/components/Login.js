@@ -78,14 +78,8 @@ const Login = ({ setAuth }) => {
           <h5>Don't have an account? Click <a href="/register">here</a> to register</h5>
         </Jumbotron>
         
-<<<<<<< Updated upstream
-      </Form>
-
-      <Link to="/register">register</Link>
-=======
       </Container>
       
->>>>>>> Stashed changes
     </Fragment>
   );
 };
