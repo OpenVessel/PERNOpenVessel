@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
 
-import { Form } from 'react-bootstrap';
+import { Form, Button, Container, Jumbotron } from 'react-bootstrap';
 
 import { toast } from "react-toastify";
 
@@ -48,12 +47,45 @@ const Login = ({ setAuth }) => {
 
   return (
     <Fragment>
-      
-      <Form>
+      <Container className="pt-3">
+        <Jumbotron>
+          <h1>Login</h1>
+          <Form onSubmit={onSubmitForm} className="pb-3">
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control 
+              type="email" 
+              placeholder="Enter email" 
+              name="email"
+              onChange={e => onChange(e)}/>
+              <Form.Text className="text-muted">
+                Enter your email
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control 
+              type="password" 
+              placeholder="Password" 
+              name="password"
+              onChange={e => onChange(e)}/>
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+          <h5>Don't have an account? Click <a href="/register">here</a> to register</h5>
+        </Jumbotron>
         
+<<<<<<< Updated upstream
       </Form>
 
       <Link to="/register">register</Link>
+=======
+      </Container>
+      
+>>>>>>> Stashed changes
     </Fragment>
   );
 };

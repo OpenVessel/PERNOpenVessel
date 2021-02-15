@@ -13,8 +13,8 @@ app.use("/authentication", require("./routes/jwtAuth"));
 
 app.use("/orthanc", require("./routes/orthanc"));
 
-const orthancPort = 80
+const serverPort = 5000
 
-app.listen(orthancPort, function () {
-  console.log(`CORS-enabled web server listening on port ${orthancPort}`)
+app.listen(serverPort, function () {
+  console.log(`CORS-enabled web server listening on port ${serverPort}`)
 })
