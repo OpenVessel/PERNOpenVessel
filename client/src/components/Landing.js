@@ -24,6 +24,9 @@ const Landing = () => {
                     <Link to="/register"><Button>Register</Button></Link>
                   </Col>
                 </Row>
+                <Row className="justify-content-center">
+                  <Link to="/register"><Button>Register</Button></Link>
+                </Row>
               </Container>
             </div>
     </div>

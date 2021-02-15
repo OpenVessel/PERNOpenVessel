@@ -12,6 +12,8 @@ import { toast } from "react-toastify";
 
 //components
 
+import Navigation from './components/Navigation';
+
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Account from "./components/Account";
@@ -49,7 +51,10 @@ function App() {
   return (
     <Fragment>
       <Router>
-        <div className="container">
+        <div>
+
+          <Navigation/>
+
           <Switch>
             <Route
               exact
