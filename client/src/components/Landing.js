@@ -19,13 +19,9 @@ const Landing = () => {
                   <Col xs lg="2">
                     <Link to="/login"><Button>Login</Button></Link>
                   </Col>
-                  <Col md="auto"></Col>
                     <Col xs lg="2">
                     <Link to="/register"><Button>Register</Button></Link>
                   </Col>
-                </Row>
-                <Row className="justify-content-center">
-                  <Link to="/register"><Button>Register</Button></Link>
                 </Row>
               </Container>
             </div>
