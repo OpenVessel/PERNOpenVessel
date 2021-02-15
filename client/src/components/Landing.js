@@ -7,22 +7,26 @@ const Landing = () => {
     <div className="text-center" style ={{paddingTop: "30vh"}}>
             
             <div id="logo-container">
-              
                 <div id="openVessel-logo">
                     <img alt="OpenVessel Logo" src={process.env.PUBLIC_URL + '/img/OpenVessel Logo.png'} style={{width: '50%', height: '30%'}}></img>
                 </div>
             </div>
             <div>
-              <Col>
-                <Row className="justify-content-center">
-                  <Link to="/login"><Button>Login</Button></Link>
-                  </Row>
-                  <Row className="justify-content-center">
-                    <Link to="/register"><Button>Register</Button></Link>
-                </Row>
-              </Col>
+                  <Container>
+                    <Row className="justify-content-md-center">
+                      <Col xs lg="2">
+                        <Link to="/login"><Button>Login</Button></Link>
+                      </Col>
+                      <Col md="auto"></Col>
+                      <Col xs lg="2">
+                        <Link to="/register"><Button>Register</Button></Link>
+                      </Col>
+                    </Row>
+                  </Container>
             </div>
     </div>
+
+
   );
 };
 
