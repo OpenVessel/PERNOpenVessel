@@ -1,15 +1,14 @@
 import React from "react";
-import { SketchPicker} from 'react-color';
 import { Link } from "react-router-dom";
-import { Container, Button, Row, Col } from 'react-bootstrap';
+import { Button, Row, Col, Container } from 'react-bootstrap';
 
 const Landing = () => {
   return (
-    <div className="text-center" style ={{paddingTop: "35vh"}}>
+    <div className="text-center" style ={{paddingTop: "20vh"}}>
             
             <div id="logo-container">
                 <div id="openVessel-logo">
-                    <img alt="OpenVessel Logo" src={process.env.PUBLIC_URL + '/img/OpenVessel Logo.png'} style={{width: '80%', height: '50%'}}></img>
+                    <img alt="OpenVessel Logo" src={process.env.PUBLIC_URL + '/img/OpenVessel Logo.png'} style={{width: '70%', height: '40%'}}></img>
                 </div>
             </div>
 

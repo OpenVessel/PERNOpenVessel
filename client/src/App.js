@@ -18,7 +18,6 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Account from "./components/Account";
 import Landing from "./components/Landing";
-import Home from "./components/Home";
 
 toast.configure();
 
