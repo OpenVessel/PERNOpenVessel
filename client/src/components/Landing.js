@@ -4,7 +4,7 @@ import { Button, Row, Col, Container } from 'react-bootstrap';
 
 const Landing = () => {
   return (
-    <div className="text-center" style ={{paddingTop: "20vh"}}>
+    <div className="text-center" style ={{paddingTop: "25vh"}}>
             
             <div id="logo-container">
                 <div id="openVessel-logo">
