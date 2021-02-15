@@ -1,5 +1,4 @@
 import React from "react";
-import { SketchPicker} from 'react-color';
 import { Link } from "react-router-dom";
 import { Container, Button, Row, Col } from 'react-bootstrap';
 
