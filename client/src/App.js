@@ -18,6 +18,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Account from "./components/Account";
 import Landing from "./components/Landing";
+import Browser from "./components/Browser";
 
 toast.configure();
 
@@ -92,11 +93,14 @@ function App() {
               exact
               path="/account"
               render={props =>
-                isAuthenticated ? (
                   <Account {...props} setAuth={setAuth} />
-                ) : (
-                  <Redirect to="/login" />
-                )
+              }
+            />
+            <Route
+              exact
+              path="/browser"
+              render={props =>
+                  <Browser {...props} />
               }
             />
           </Switch>
