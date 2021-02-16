@@ -5,9 +5,9 @@ const axios = require("axios");
 router.get('/:apiEndpoint', async (req, res) => {
     try {
         const { apiEndpoint } = req.params;
-
+        
         const orthancPort = 8042
-        const orthancRes = await axios.get(`http://localhost:${orthancPort}/${apiEndpoint}`)
+        const orthancRes = await axios.get(`http://localhost:${orthancPort}${apiEndpoint}`)
         .then(res => {
             return res.data;
         })
