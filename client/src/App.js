@@ -92,11 +92,11 @@ function App() {
               exact
               path="/account"
               render={props =>
-                isAuthenticated ? (
+                // isAuthenticated ? (
                   <Account {...props} setAuth={setAuth} />
-                ) : (
-                  <Redirect to="/login" />
-                )
+                // ) : (
+                //   <Redirect to="/login" />
+                // )
               }
             />
           </Switch>
