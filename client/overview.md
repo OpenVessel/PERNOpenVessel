@@ -21,15 +21,15 @@ First page authenticated users are directed to. (Not sure about this page yet)
 
 ## `Account`
 
-**Endpoint**: /
+**Endpoint**: /http://localhost:3000/account
 
-# Todo
+View, edit, and delete account
 
 ## `Register`
 
 **Endpoint**: /http://localhost:3000/register
 
-# Users will be directed to this page to create a new account if they don't have an account at OpenVessel
+Users will be directed to this page to create a new account if they don't have an account at OpenVessel
 
 ## `Navigation`
 
