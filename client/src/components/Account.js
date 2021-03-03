@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Button, Row, Col, Container } from 'react-bootstrap';
+// import React from 'react';
+import styled from 'styled-components';// Style the Button component
 
 // import React from 'react';
 // import styled from 'components';
@@ -51,11 +53,32 @@ import { Button, Row, Col, Container } from 'react-bootstrap';
 
 // import React, { useState } from "react";
 // import "client/src/App.css";
-function Form() {
+function Form(props) {
 const [Username, setUsername] = useState("");
 // const [lastName, setLastName] = useState("");
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
+
+const hiddenFileInput = React.useRef(null);
+
+  // Programatically click the hidden file input element
+  // when the Button component is clicked
+const handleClick = event => {
+    hiddenFileInput.current.click();
+  };  // Call a function (passed as a prop from the parent component)
+  // to handle the user-selected file 
+const handleChange = event => {
+    const fileUploaded = event.target.files[0];
+    props.handleFile(fileUploaded);
+    };
+
+const Button = styled.button`
+   /* Insert your favorite CSS code to style a button */
+`;
+// const FileUploader = props => {  // Create a reference to the hidden file input element
+
+// };
+
 return (
     <form>
         <div className="text-center" style ={{paddingTop: "25vh"}}>
@@ -100,53 +123,60 @@ return (
                             required
                         />
                     </Col>
-                </Row> 
-            </Container>
-            
-            {/* <input
-                value={Username}
-                onChange={e => setUsername(e.target.value)}
-                placeholder="Username"
-                type="text"
-                name="setUsername"
-                required
-            /> */}
 
-            {/* <input
-                value={lastName}
-                onChange={e => setLastName(e.target.value)}
-                placeholder="Last name"
-                type="text"
-                name="lastName"
-                required
-            /> */}
-            {/* <input
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                placeholder="Email address"
-                type="email"
-                name="email"
-                required
-            /> */}
-            {/* <input
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                placeholder="Password"
-                type="password"
-                name="password"
-                required
-            /> */}
+                    
+                </Row> 
+                <Button onClick={handleClick}>
+                        Upload a file
+                        </Button>
+                        <input
+                        type="file"
+                        ref={hiddenFileInput}
+                        onChange={handleChange}
+                        style={{display: 'none'}} 
+                    />
+
+            </Container>
             <button type="submit">Submit</button>
         </div>
     </form>
 
-
-
-
 );
     };
+    export default Form;
 
-export default Form;
+
+// // const Button = styled.button`
+// //   /* Insert your favorite CSS code to style a button */
+// // `;
+// const FileUploader = props => {  // Create a reference to the hidden file input element
+// const hiddenFileInput = React.useRef(null);
+
+//   // Programatically click the hidden file input element
+//   // when the Button component is clicked
+// const handleClick = event => {
+//     hiddenFileInput.current.click();
+//   };  // Call a function (passed as a prop from the parent component)
+//   // to handle the user-selected file 
+// const handleChange = event => {
+//     const fileUploaded = event.target.files[0];
+//     props.handleFile(fileUploaded);
+// };  return (
+//     <>
+//         <Button onClick={handleClick}>
+//         Upload a file
+//         </Button>
+//         <input
+//         type="file"
+//         ref={hiddenFileInput}
+//         onChange={handleChange}
+//         style={{display: 'none'}} 
+//     />
+//     </>
+// );
+// export default FileUploader;
+
+
 
 // // Style the Button component
 // // const Button = styled.button`
@@ -187,4 +217,3 @@ export default Form;
 
 // };
 // export default Form FileUploader;
-
