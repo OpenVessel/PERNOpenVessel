@@ -19,9 +19,7 @@ Message.propTypes = {
     msg: PropTypes.string.isRequired
 };
 export default Message;
-woot
-dope
-+1
+
 
 
 
