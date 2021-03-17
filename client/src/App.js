@@ -20,7 +20,6 @@ import Account from "./components/Account";
 import Landing from "./components/Landing";
 import Browser from "./components/browser/Browser";
 
-
 toast.configure();
 
 function App() {

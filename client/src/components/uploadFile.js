@@ -1,16 +1,8 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios'
+// import React, { Component } from 'react';
+// import logo from './logo.svg';
+// import './App.css';
+// import axios from 'axios'
 
-
-
-
-
-
-
-// -------------------------------------------------------
-// Need to buy firebase
 // class uploadFile extends Component {
 //     state = {
 //         selectedFile: null
@@ -40,7 +32,7 @@ import axios from 'axios'
 
 //     render() {
 //         return (
-//             <div className="uploadFile">
+//             <div className="uploadFile.js">
 //                 <input 
 //                 sytle={{display: 'none'}} 
 //                 type="file" 
@@ -56,37 +48,37 @@ import axios from 'axios'
 
 // ----------------------------
 
-// import React, { Component } from 'react'
-// import './App.css'
+import React, { Component } from 'react'
+import './App.css'
 
-// export class uploadFile extends Component {
-//     state={
-//         profileImag: "path of the image"
-//     }
-//     render() {
-//         return (
+export class uploadFile extends Component {
+    state={
+        profileImag: "path of the image"
+    }
+    render() {
+        return (
             
-//         )
-//     }
-// }
+        )
+    }
+}
 
-// function uploadFile() {
-//     return (
-//         <div className = "uploadFile">
-//             <header classNmae = "App-header">
-//                 <imag scr={logo className="App-logo" alt="logo" />
-//                 <p>
-//                     Edit <code>src/App.js</code> and save to reload.
-//                 </p>
-//                 <a
-//                     className="App-link"
-//                     href="https://reactjs.org"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                 >
-//                     Learn React
-//                 </a>
-//             </header>
-//         </div>
-//     )
-// }
+function uploadFile() {
+    return (
+        <div className = "uploadFile">
+            <header classNmae = "App-header">
+                <imag scr={logo className="App-logo" alt="logo" />
+                <p>
+                    Edit <code>src/App.js</code> and save to reload.
+                </p>
+                <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Learn React
+                </a>
+            </header>
+        </div>
+    )
+}
