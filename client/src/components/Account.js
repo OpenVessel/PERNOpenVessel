@@ -77,7 +77,7 @@ function Form(props) {
                     </Col>
                 </Row> 
 
-                <Button onClick={handleClick}>
+                {/* <Button onClick={handleClick}>
                         Upload a file
                         </Button>
                         <input
@@ -85,17 +85,17 @@ function Form(props) {
                         ref={hiddenFileInput}
                         onChange={handleChange}
                         style={{display: 'none'}} 
-                    />
+                    /> */}
 
                 <h4 className='display-4 text-center mb-4'>
-                    <i className='fab fa-react' /> React File Upload
+                    <i className='fab fa-react' /> 
                     </h4>
 
                     <FileUpload />
 
             </Container>
 
-            <button type="submit">Submit</button>
+            {/* <button type="submit">Submit</button> */}
         </div>
     </form>
     );
