@@ -14,7 +14,7 @@ const serverPort = 5000
 const serverPostPort = 6000
 // 5432
 app.listen(serverPort, function () {
-  console.log(`CORS-enabled web server listening on port ${serverPort}`)
+    console.log(`CORS-enabled web server listening on port ${serverPort}`)
 })
 app.listen(serverPostPort, () => { 
 console.log(`PostgresSQL is listening on port ${serverPostPort}`)
